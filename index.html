@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Политика конфиденциальности — Флагомир</title>
-<meta name="description" content="Приложение «Флагомир» не собирает никаких данных о пользователе.">
+<title>Политика конфиденциальности — Флагомир · Privacy Policy — Flagomir</title>
+<meta name="description" content="Приложение «Флагомир» не собирает никаких данных о пользователе. Flagomir collects no user data.">
 <style>
   :root{
     --bg:#ffffff; --fg:#16233a; --muted:#5b6b85;
@@ -35,6 +35,17 @@
   a{color:var(--brand)}
   footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;
     color:var(--muted);font-size:14px}
+  /* Переключатель языка. Кнопки, а не ссылки: страница одна,
+     адрес не меняется, и Apple видит одну и ту же ссылку для всех витрин */
+  .langs{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .langs button{font:inherit;font-size:14px;font-weight:600;cursor:pointer;
+    color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+    padding:7px 14px;border-radius:999px;line-height:1}
+  .langs button[aria-current="true"]{background:#fff;color:var(--brand);
+    border-color:#fff}
+  .langs button:hover{background:rgba(255,255,255,.28)}
+  .langs button[aria-current="true"]:hover{background:#fff}
+  [hidden]{display:none!important}
   @media (max-width:520px){ h1{font-size:25px} body{font-size:16px} }
 </style>
 </head>
@@ -42,12 +53,21 @@
 
 <header>
   <div class="wrap">
-    <h1>Политика конфиденциальности</h1>
-    <p class="sub">Приложение «Флагомир» для iPhone · дата вступления в силу: 17 августа 2026 года</p>
+    <h1 id="pageTitle">Политика конфиденциальности</h1>
+    <p class="sub" id="pageSub">Приложение «Флагомир» для iPhone · дата вступления в силу: 17 августа 2026 года</p>
+    <nav class="langs" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" aria-current="true">Русский</button>
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="es">Español</button>
+      <button type="button" data-lang="de">Deutsch</button>
+    </nav>
   </div>
 </header>
 
 <main class="wrap">
+
+<!-- ======================= РУССКИЙ ======================= -->
+<section data-lang="ru" lang="ru">
 
   <div class="lead">
     <p><strong>Коротко.</strong> Приложение «Флагомир» не собирает никаких данных о пользователе.
@@ -104,10 +124,232 @@
   <h2>Связь</h2>
   <p>По любым вопросам: <a href="mailto:klopovka.games@gmail.com">klopovka.games@gmail.com</a></p>
 
-  <footer>
-    «Флагомир» — детская игра-викторина про флаги мира. Разработчик: Никита Буртный.
-  </footer>
+  <footer>«Флагомир» — детская игра-викторина про флаги мира. Разработчик: Никита Буртный.</footer>
+</section>
+
+<!-- ======================= ENGLISH ======================= -->
+<section data-lang="en" lang="en" hidden>
+
+  <div class="lead">
+    <p><strong>In short.</strong> The Flagomir app collects no user data whatsoever.
+    No name, no email, no age, no location and no device identifiers.</p>
+  </div>
+
+  <h2>What is stored, and where</h2>
+  <p>The app stores only your game progress, and only on the device itself:</p>
+  <ul>
+    <li>the number of points scored;</li>
+    <li>which countries you answered correctly and which you got wrong;</li>
+    <li>the difficulty level you chose;</li>
+    <li>the player names you added yourself for the family leaderboard.</li>
+  </ul>
+  <p>This data stays in your phone's memory. It is not sent to the developer or to any
+  third party. Deleting the app erases it completely. You can also erase your progress
+  inside the game: "My progress" → "Reset progress".</p>
+
+  <h2>Game Center</h2>
+  <p>The game has an optional global leaderboard called "World". It works through Game
+  Center, a service provided by Apple. If you use it, the only thing sent to the
+  leaderboard is your score. Your player nickname and how it is displayed are controlled
+  by Apple in your account settings; the developer of this app neither collects nor
+  stores names. See
+  <a href="https://www.apple.com/legal/privacy/en-ww/">Apple's privacy policy</a> for details.</p>
+  <p>Game Center is entirely optional: the "Family" tab always works locally, offline,
+  and without signing in to any account.</p>
+
+  <h2>Internet</h2>
+  <p>The game works fully offline. All flags and all country and city names are built into
+  the app itself and are never downloaded. The network is used only when you open the
+  global leaderboard yourself.</p>
+
+  <h2>Advertising and analytics</h2>
+  <p>The app contains no advertising, no visitor counters and no analytics systems.
+  No third-party libraries that collect data are used.</p>
+
+  <h2>Purchases</h2>
+  <p>The app is free. There are no in-app purchases and no subscriptions.</p>
+
+  <h2>Children</h2>
+  <p>The app is intended for children as well as adults. That is exactly why it has no
+  data collection, no advertising, no purchases, no registration and no outbound links.</p>
+
+  <h2>Flag images and city data</h2>
+  <p>The flag images come from the public collection at flagpedia.net, distributed as
+  public domain. The city lists come from the open geographical database GeoNames
+  (licence CC BY 4.0).</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published at this same address,
+  with the date of the change.</p>
+
+  <h2>Contact</h2>
+  <p>For any questions: <a href="mailto:klopovka.games@gmail.com">klopovka.games@gmail.com</a></p>
+
+  <footer>Flagomir is a quiz game about the flags of the world. Developer: Nikita Burtnyi.</footer>
+</section>
+
+<!-- ======================= ESPAÑOL ======================= -->
+<section data-lang="es" lang="es" hidden>
+
+  <div class="lead">
+    <p><strong>En resumen.</strong> La aplicación Flagomir no recopila ningún dato del
+    usuario. Ni el nombre, ni el correo, ni la edad, ni la ubicación, ni identificadores
+    del dispositivo.</p>
+  </div>
+
+  <h2>Qué se guarda y dónde</h2>
+  <p>La aplicación guarda únicamente el progreso del juego, y solo en el propio dispositivo:</p>
+  <ul>
+    <li>los puntos conseguidos;</li>
+    <li>qué países has acertado y en cuáles te has equivocado;</li>
+    <li>el nivel de dificultad elegido;</li>
+    <li>los nombres de los jugadores que tú mismo añadas para la clasificación familiar.</li>
+  </ul>
+  <p>Estos datos permanecen en la memoria de tu teléfono. No se envían al desarrollador
+  ni a terceros. Al eliminar la aplicación se borran por completo. También puedes borrar
+  tu progreso dentro del juego: «Mi progreso» → «Restablecer progreso».</p>
+
+  <h2>Game Center</h2>
+  <p>El juego tiene una clasificación global opcional llamada «Mundo». Funciona a través
+  de Game Center, un servicio de Apple. Si la usas, lo único que se envía a la
+  clasificación son tus puntos. El apodo del jugador y su forma de mostrarse los controla
+  Apple en los ajustes de tu cuenta; el desarrollador de esta aplicación no recopila ni
+  almacena nombres. Más información en la
+  <a href="https://www.apple.com/legal/privacy/es/">política de privacidad de Apple</a>.</p>
+  <p>Game Center es totalmente opcional: la pestaña «Familia» funciona siempre en local,
+  sin conexión y sin iniciar sesión en ninguna cuenta.</p>
+
+  <h2>Internet</h2>
+  <p>El juego funciona por completo sin conexión. Todas las banderas y todos los nombres
+  de países y ciudades están incluidos en la propia aplicación y nunca se descargan.
+  La red solo se usa cuando abres tú mismo la clasificación global.</p>
+
+  <h2>Publicidad y analítica</h2>
+  <p>La aplicación no tiene publicidad, ni contadores de visitas, ni sistemas de analítica.
+  No se utiliza ninguna biblioteca de terceros que recopile datos.</p>
+
+  <h2>Compras</h2>
+  <p>La aplicación es gratuita. No hay compras dentro de la aplicación ni suscripciones.</p>
+
+  <h2>Niños</h2>
+  <p>La aplicación está pensada también para niños. Precisamente por eso no hay recopilación
+  de datos, ni publicidad, ni compras, ni registro, ni enlaces externos.</p>
+
+  <h2>Imágenes de banderas y datos de ciudades</h2>
+  <p>Las imágenes de las banderas proceden de la colección pública flagpedia.net,
+  distribuida como dominio público. Las listas de ciudades proceden de la base de datos
+  geográfica abierta GeoNames (licencia CC BY 4.0).</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, la nueva versión se publicará en esta misma dirección,
+  indicando la fecha.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier consulta: <a href="mailto:klopovka.games@gmail.com">klopovka.games@gmail.com</a></p>
+
+  <footer>Flagomir es un juego de preguntas sobre las banderas del mundo. Desarrollador: Nikita Burtnyi.</footer>
+</section>
+
+<!-- ======================= DEUTSCH ======================= -->
+<section data-lang="de" lang="de" hidden>
+
+  <div class="lead">
+    <p><strong>Kurz gesagt.</strong> Die App Flagomir erhebt keinerlei Nutzerdaten.
+    Weder Namen noch E-Mail-Adresse, Alter, Standort oder Gerätekennungen.</p>
+  </div>
+
+  <h2>Was gespeichert wird und wo</h2>
+  <p>Die App speichert ausschließlich den Spielfortschritt, und zwar nur auf dem Gerät selbst:</p>
+  <ul>
+    <li>die erreichten Punkte;</li>
+    <li>welche Länder richtig erraten wurden und bei welchen es Fehler gab;</li>
+    <li>die gewählte Schwierigkeitsstufe;</li>
+    <li>die Spielernamen, die Sie selbst für die Familienrangliste angelegt haben.</li>
+  </ul>
+  <p>Diese Daten bleiben im Speicher Ihres Telefons. Sie werden weder an den Entwickler
+  noch an Dritte übertragen. Beim Löschen der App werden sie vollständig entfernt.
+  Den Fortschritt können Sie auch im Spiel löschen: «Mein Fortschritt» → «Fortschritt zurücksetzen».</p>
+
+  <h2>Game Center</h2>
+  <p>Das Spiel hat eine optionale weltweite Rangliste namens «Welt». Sie funktioniert über
+  Game Center, einen Dienst von Apple. Wenn Sie sie nutzen, wird an die Rangliste
+  ausschließlich Ihre Punktzahl übermittelt. Den Spielernamen und seine Anzeige steuert
+  Apple in den Einstellungen Ihres Accounts; der Entwickler dieser App erhebt und
+  speichert keine Namen. Näheres in der
+  <a href="https://www.apple.com/legal/privacy/de-ww/">Datenschutzrichtlinie von Apple</a>.</p>
+  <p>Game Center ist völlig freiwillig: Der Tab «Familie» funktioniert immer lokal, ohne
+  Internet und ohne Anmeldung bei irgendeinem Account.</p>
+
+  <h2>Internet</h2>
+  <p>Das Spiel funktioniert vollständig offline. Alle Flaggen sowie alle Länder- und
+  Städtenamen sind in der App selbst enthalten und werden nie nachgeladen. Das Netz wird
+  nur genutzt, wenn Sie die weltweite Rangliste selbst öffnen.</p>
+
+  <h2>Werbung und Analyse</h2>
+  <p>Die App enthält keine Werbung, keine Besucherzähler und keine Analysesysteme.
+  Es werden keine Bibliotheken Dritter eingesetzt, die Daten erheben.</p>
+
+  <h2>Käufe</h2>
+  <p>Die App ist kostenlos. Es gibt keine In-App-Käufe und keine Abonnements.</p>
+
+  <h2>Kinder</h2>
+  <p>Die App richtet sich auch an Kinder. Genau deshalb gibt es darin keine Datenerhebung,
+  keine Werbung, keine Käufe, keine Registrierung und keine Links nach außen.</p>
+
+  <h2>Flaggenbilder und Städtedaten</h2>
+  <p>Die Flaggenbilder stammen aus der öffentlichen Sammlung flagpedia.net, die als
+  Gemeinfreiheit verbreitet wird. Die Städtelisten stammen aus der offenen geografischen
+  Datenbank GeoNames (Lizenz CC BY 4.0).</p>
+
+  <h2>Änderungen</h2>
+  <p>Sollte sich diese Richtlinie ändern, wird die neue Fassung unter derselben Adresse
+  mit Datum veröffentlicht.</p>
+
+  <h2>Kontakt</h2>
+  <p>Bei Fragen: <a href="mailto:klopovka.games@gmail.com">klopovka.games@gmail.com</a></p>
+
+  <footer>Flagomir ist ein Quizspiel über die Flaggen der Welt. Entwickler: Nikita Burtnyi.</footer>
+</section>
 
 </main>
+
+<script>
+(function () {
+  // Заголовок и подзаголовок в шапке — на языке страницы
+  var ЗАГОЛОВКИ = {
+    ru: ["Политика конфиденциальности",
+         "Приложение «Флагомир» для iPhone · дата вступления в силу: 17 августа 2026 года"],
+    en: ["Privacy Policy",
+         "Flagomir for iPhone · effective date: 17 August 2026"],
+    es: ["Política de privacidad",
+         "Flagomir para iPhone · fecha de entrada en vigor: 17 de agosto de 2026"],
+    de: ["Datenschutzrichtlinie",
+         "Flagomir für iPhone · gültig ab: 17. August 2026"]
+  };
+  var кнопки = document.querySelectorAll('.langs button');
+  var разделы = document.querySelectorAll('main section[data-lang]');
+
+  function показать(код) {
+    if (!ЗАГОЛОВКИ[код]) код = 'en';
+    разделы.forEach(function (s) { s.hidden = s.dataset.lang !== код; });
+    кнопки.forEach(function (b) {
+      b.setAttribute('aria-current', b.dataset.lang === код ? 'true' : 'false');
+    });
+    document.documentElement.lang = код;
+    document.getElementById('pageTitle').textContent = ЗАГОЛОВКИ[код][0];
+    document.getElementById('pageSub').textContent = ЗАГОЛОВКИ[код][1];
+  }
+
+  кнопки.forEach(function (b) {
+    b.addEventListener('click', function () { показать(b.dataset.lang); });
+  });
+
+  // Язык по браузеру. Английский по умолчанию: страницу читают
+  // и проверяющие Apple, и покупатели из разных стран
+  var код = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  показать(ЗАГОЛОВКИ[код] ? код : 'en');
+})();
+</script>
+
 </body>
 </html>
